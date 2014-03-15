@@ -1,0 +1,318 @@
+/*
+Theme Name: madoro
+Theme URI: http://dimpurr.com/
+Version: 0.1
+Author: Dimpurr
+Author URI: http://dimpurr.com
+Description: Start a WordPress theme here.
+Text Domain: startpress
+*/
+/* 定义 WordPress 主题信息 */
+
+/* Reset */
+/* 一些通用的清除和 HTML5 定义，如果需要。注意 @import 可能导致一定的效率问题*/
+
+/* Common */
+/* 在这里格式化标签和定义通用类。 */
+
+h1, h2, h3, h4, h5, h6, p, q, blockquote, li, a {
+	font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	color: #FEFEFE;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dashed #FEFEFE;
+}
+
+#ar_t img , #ar_t .wp-caption {
+	max-width: 100% !important;
+	width: 100% !important;
+}
+
+.wp-caption a {
+	border: none;
+}
+
+.wp-caption p {
+	margin: -4px 0 12px 0;
+	padding: 0 0 6px 16px;
+	border-bottom: 1px dashed rgba(255,255,255,0.4);
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* Layout */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#page {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+#header {
+	margin: 60px 0 0 0;
+	padding: 80px 80px 0 80px;
+}
+
+#footer {
+	padding: 4px 80px;
+	margin: 0 0 40px 0;
+}
+
+.ar_h {
+	margin: 0;
+	padding: 20px 80px 20px 80px;
+}
+
+.ar_h .hr {
+	top: 20px;
+	right: 80px;
+}
+
+.ar_t {
+	margin: 0;
+	padding: 20px 80px 20px 80px;
+}
+
+/* Style */
+
+body {
+	background-color: #121314;
+	background-image: url("img/background.jpg");
+	background-attachment: fixed;
+	background-size: auto 100%;
+	background-size: cover;
+	color: #FAFAFA;
+}
+
+#header {
+	background: rgba(0,0,0,0.4);
+}
+
+#header h1 {
+	margin: 0;
+}
+
+#header h1 a {
+	border: none;
+}
+
+#header h2 {
+	margin: 0;
+	font-size: 0.8em;
+	color: rgba(255,255,255,0.6);
+}
+
+#header .menu ul {
+	margin: 20px 0 0 0;
+	padding: 0;
+	text-align: left;
+}
+
+#header .menu li {
+	display: inline-block;
+	margin: 20px 0 0 0;
+	padding: 0 30px 0 0;
+}
+
+#header .menu li a {
+	padding: 6px 0;
+	font-size: 13px;
+	line-height: 42px;
+	border: none;
+	color: #EFEFEF;
+}
+
+#header .menu li a:hover {
+	border-top: 1px dashed rgba(255,255,255,0.4);
+}
+
+#article {
+	background: rgba(0,0,0,0.8);
+}
+
+.ar_ctn {
+
+}
+
+.ar_h {
+	position: relative;
+	background: rgba(0,0,0,0.8);
+}
+
+.ar_h h2 {
+	margin: 0 50px 2px 0;
+}
+
+.ar_h h2 a {
+	border: none;
+}
+
+.ar_h .hl_tags a {
+	display: inline-block;
+	margin: 0 8px 0 0;
+	padding: 0 8px 0 0;
+	border: none;
+	border-right: 1px solid rgba(255,255,255,0.3);
+	font-size: 12px;
+	line-height: 12px;
+	color: #EFEFEF;
+}
+
+.ar_h .hl_tags a:last-child {
+	border: none;
+}
+
+.ar_h .hr {
+	float: right;
+	position: absolute;
+	text-align: right;
+}
+
+.ar_h .hr a {
+	display: block;
+	text-align: right;
+	border: 1px dashed rgba(255,255,255,0.25);
+	margin: 4px 0 0 0;
+	padding: 2px 6px;
+	font-size: 12px;
+}
+
+.ar_h .hr a:hover {
+	border: 1px dashed rgba(255,255,255,0.35);
+}
+
+.ar_t {
+	font-size: 14px;
+	line-height: 2em;
+}
+
+#pagenavi {
+	padding: 0 80px;
+	background: rgba(0,0,0,0.4);
+}
+
+#pagenavi .page-numbers.current {
+	color: rgba(255,255,255,0.6);
+}
+
+#pagenavi .page-numbers {
+	font-weight: bolder;
+	display: inline-block;
+	margin: 8px 0;
+	padding: 0 6px 0 0;
+	font-size: 14px;
+	line-height: 14px;
+	border: none;
+	border-right: 1px solid rgba(255,255,255,0.3);
+	color: #EFEFEF;
+}
+
+#pagenavi .page-numbers:last-child {
+	border:none;
+}
+
+#sidebar {
+	margin: 0;
+	padding: 0 80px;
+	background: rgba(0,0,0,0.8);
+}
+
+#sidebar .widget_ctn {
+	display: inline-block;
+	width: 47%;
+	margin: 60px 2% 60px 0;
+	vertical-align: top;
+}
+
+#two {
+	margin-right: 0;
+}
+
+#sidebar .widget {
+	margin: 0 0 10px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px dashed rgba(255,255,255,0.4);
+	font-size: 13px;
+	line-height: 1.8em;
+}
+
+#sidebar .widget:last-child {
+	border: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#sidebar .widget ul {
+	margin: 0;
+}
+
+#sidebar .widget li {
+	margin: 6px 0;
+	color: #BBB;
+}
+
+#sidebar .widget li a {
+	color: #EEE;
+}
+
+#sidebar .widget h2 {
+	margin: 0 0 12px 0;
+	font-size: 14px;
+}
+
+#wp-calendar td {
+	width: 1%;
+	height: 20px;
+}
+
+#wp-calendar caption {
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-left: -5px;
+}
+
+#footer {
+	font-size: 13px;
+	color: #888;
+	background: rgba(0,0,0,0.4);
+}
+
+#footer a {
+	color: #AAA;
+	border: none;
+}
+
+#post_nav {
+	display: none;
+}
+
+#cmt {
+	padding: 0 80px;
+}
+
+#cmt .avatar {
+	float: left;
+	margin-right: 10px;
+}
+
+#cmt .comment {
+	margin: 10px 0;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+
+#page {
+	width: 100%;
+}
+
+}
