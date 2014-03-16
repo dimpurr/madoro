@@ -23,12 +23,6 @@
 <![endif]-->
 
 <?php wp_head(); ?>
-
-<?php if ( is_admin_bar_showing() ) {
-	// 如果有 fiexd top 定位的元素，在这为 Admin Bar 增加 32px 顶边距
-	echo '<style type="text/css" media="screen"> #float { top: 32px; } </style>' ;
-} ?>
-
 </head>
 
 <body>
@@ -41,6 +35,10 @@
 </a></h1>
 <h2><?php bloginfo( 'description' ); ?></h2>
 
-<?php wp_nav_menu( array( 'theme_location' => 'Nav' ) ); ?>
+<form id="tr_s_f" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+	<input id="tr_search" type="text" name="s" id="s" placeholder="<?=__('搜索','dpt'); ?>" size="10" />
+</form>
+
+<?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
 
 </header>

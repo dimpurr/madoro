@@ -1,19 +1,14 @@
 /*
 Theme Name: madoro
-Theme URI: http://dimpurr.com/
-Version: 0.9
+Theme URI: http://dimpurr.com/madoro
+Version: 1.0
 Author: Dimpurr
 Author URI: http://dimpurr.com
 Description: A Flat Dark WordPress Theme.
-Text Domain: madoro
+Text Domain: dpt
 */
-/* 定义 WordPress 主题信息 */
-
-/* Reset */
-/* 一些通用的清除和 HTML5 定义，如果需要。注意 @import 可能导致一定的效率问题*/
 
 /* Common */
-/* 在这里格式化标签和定义通用类。 */
 
 h1, h2, h3, h4, h5, h6, p, q, blockquote, li, a {
 	font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
@@ -51,7 +46,7 @@ button:hover, input[type="submit"]:hover {
 
 .ar_t img , .ar_t .wp-caption {
 	max-width: 100% !important;
-	width: 100% !important;
+	margin: 0 auto;
 }
 
 .wp-caption a {
@@ -153,7 +148,7 @@ body {
 	border-color: rgba(255,255,255,0.4);
 }
 
-#header .menu ul {
+#header .menu ul, #header ul.menu {
 	margin: 20px 0 0 0;
 	padding: 0;
 	text-align: left;
@@ -162,7 +157,7 @@ body {
 #header .menu li {
 	display: inline-block;
 	margin: 20px 0 0 0;
-	padding: 0 30px 0 0;
+	padding: 0 24px 0 0;
 }
 
 #header .menu li a {

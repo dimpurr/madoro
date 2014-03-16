@@ -19,7 +19,7 @@ if ( function_exists('register_sidebar') )
 	register_sidebar(array(
 		'name' => __( 'One', 'dpt' ),
 		'id' => 'dpt_one',
-		'description' => 'One',
+		'description' => __( '左侧工具栏', 'dpt' ),
 		'class' => '',
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
@@ -32,7 +32,7 @@ if ( function_exists('register_sidebar') )
 	register_sidebar(array(
 		'name' => __( 'Two', 'dpt' ),
 		'id' => 'dpt_two',
-		'description' => 'Two',
+		'description' => __( '右侧工具栏', 'dpt' ),
 		'class' => '',
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
@@ -45,8 +45,8 @@ if ( function_exists('register_sidebar') )
 
 require_once(TEMPLATEPATH . '/func/theme-update-checker.php'); 
 $wpdaxue_update_checker = new ThemeUpdateChecker(
-	'StartPress',
-	'http://work.dimpurr.com/theme/startpress/update/info.json'
+	'madoro',
+	'http://work.dimpurr.com/theme/madoro/update/info.json'
 );
 
 // 主题使用统计，如果需要。
@@ -59,7 +59,7 @@ function dpt_tjaj() { ?>
 	<script type="text/javascript">
 	jQuery(document).ready(function() {
 		// 修改地址为服务器的 theme_tj.php 页面。请参见 func 目录
-		jQuery.get("http://work.dimpurr.com/theme/theme_tj.php?theme_name=StartPress&blog_url=<?=get_bloginfo('url')?>&t=" + Math.random());
+		jQuery.get("http://work.dimpurr.com/theme/theme_tj.php?theme_name=madoro&blog_url=<?=get_bloginfo('url')?>&t=" + Math.random());
 	});
 	</script>
 <?php };
@@ -197,7 +197,7 @@ function dpt_menu_func(){
 		'dpt_config');
 }
 
-add_action('admin_menu', 'dpt_menu_func');
+// add_action('admin_menu', 'dpt_menu_func');
 
 function dpt_config(){ dpt_thtj(); ?>
 
