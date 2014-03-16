@@ -1,11 +1,11 @@
 /*
 Theme Name: madoro
 Theme URI: http://dimpurr.com/
-Version: 0.1
+Version: 0.9
 Author: Dimpurr
 Author URI: http://dimpurr.com
-Description: Start a WordPress theme here.
-Text Domain: startpress
+Description: A Flat Dark WordPress Theme.
+Text Domain: madoro
 */
 /* 定义 WordPress 主题信息 */
 
@@ -25,7 +25,31 @@ a {
 	border-bottom: 1px dashed #FEFEFE;
 }
 
-#ar_t img , #ar_t .wp-caption {
+input, textarea {
+	border: 1px dashed rgba(255,255,255,0.4);
+	border-width: 1px 0;
+	background: none;
+	color: #FEFEFE;
+	padding: 8px 14px;
+	line-height: 1.4em;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+	border-color: rgba(255,255,255,0.6);
+}
+
+button, input[type="submit"] {
+	border: 1px dashed rgba(255,255,255,0.4);
+	padding: 6px 14px;
+}
+
+button:hover, input[type="submit"]:hover {
+	border-color: rgba(255,255,255,0.6);
+	cursor: pointer;
+}
+
+.ar_t img , .ar_t .wp-caption {
 	max-width: 100% !important;
 	width: 100% !important;
 }
@@ -34,7 +58,7 @@ a {
 	border: none;
 }
 
-.wp-caption p {
+.wp-caption .wp-caption-text {
 	margin: -4px 0 12px 0;
 	padding: 0 0 6px 16px;
 	border-bottom: 1px dashed rgba(255,255,255,0.4);
@@ -78,7 +102,7 @@ body {
 
 .ar_t {
 	margin: 0;
-	padding: 20px 80px 20px 80px;
+	padding: 20px 80px 60px 80px;
 }
 
 /* Style */
@@ -89,11 +113,14 @@ body {
 	background-attachment: fixed;
 	background-size: auto 100%;
 	background-size: cover;
+	background-position: center;
 	color: #FAFAFA;
 }
 
 #header {
-	background: rgba(0,0,0,0.4);
+	position: relative;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url("img/r_w.png");
 }
 
 #header h1 {
@@ -108,6 +135,22 @@ body {
 	margin: 0;
 	font-size: 0.8em;
 	color: rgba(255,255,255,0.6);
+}
+
+#header form {
+	position: absolute;
+	right: 80px;
+	top: 80px;
+}
+
+#header form input {
+	text-align: right;
+	border-color: transparent;
+	border-width: 0 0 1px 0;
+}
+
+#header form input:focus {
+	border-color: rgba(255,255,255,0.4);
 }
 
 #header .menu ul {
@@ -135,7 +178,8 @@ body {
 }
 
 #article {
-	background: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.9);
+	background-image: url("img/r_w.png");
 }
 
 .ar_ctn {
@@ -144,7 +188,8 @@ body {
 
 .ar_h {
 	position: relative;
-	background: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.9);
+	background-image: url("img/r_w.png");
 }
 
 .ar_h h2 {
@@ -155,7 +200,7 @@ body {
 	border: none;
 }
 
-.ar_h .hl_tags a {
+.ar_h .hl_tags a, #cmt .cmt_meta_time a, #cmt .edit-link a , #cmt .comment-reply-link {
 	display: inline-block;
 	margin: 0 8px 0 0;
 	padding: 0 8px 0 0;
@@ -166,7 +211,7 @@ body {
 	color: #EFEFEF;
 }
 
-.ar_h .hl_tags a:last-child {
+.ar_h .hl_tags a:last-child, #cmt .comment-reply-link {
 	border: none;
 }
 
@@ -194,9 +239,14 @@ body {
 	line-height: 2em;
 }
 
+.ar_t p {
+	margin: 1.8em 0;
+}
+
 #pagenavi {
 	padding: 0 80px;
-	background: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.5);
+	background-image: url("img/r_w.png");
 }
 
 #pagenavi .page-numbers.current {
@@ -222,7 +272,8 @@ body {
 #sidebar {
 	margin: 0;
 	padding: 0 80px;
-	background: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.9);
+	background-image: url("img/r_w.png");
 }
 
 #sidebar .widget_ctn {
@@ -245,7 +296,7 @@ body {
 }
 
 #sidebar .widget:last-child {
-	border: none;
+	border-width: 0;
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
@@ -282,7 +333,8 @@ body {
 #footer {
 	font-size: 13px;
 	color: #888;
-	background: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.5);
+	background-image: url("img/r_w.png");
 }
 
 #footer a {
@@ -291,20 +343,114 @@ body {
 }
 
 #post_nav {
-	display: none;
+	padding: 2px 80px 8px 80px;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url("img/r_w.png");
+}
+
+#post_nav a {
+	margin: 0px;
+	font-size: 13px;
+	display: inline-block;
+	color: #CCC;
+	border: none;
+}
+
+#post_nav #p_n_r a {
+	float: right;
+}
+
+#post_nav #p_n_r::after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 #cmt {
 	padding: 0 80px;
+	background-color: rgba(0,0,0,0.9);
+	background-image: url("img/r_w.png");
+	font-size: 13px;
+	line-height: 1.8em;
+}
+
+#cmt p, #cmt li {
+	color: #EEE;
+}
+
+#cmt #comments {
+	margin: 0;
+	padding: 80px 0 0 0;
+}
+
+#cmt .fn {
+	font-style: normal;
 }
 
 #cmt .avatar {
 	float: left;
-	margin-right: 10px;
+	margin: 3px 10px 0 0;
+	width: 36px;
+	height: 36px;
+	border: 1px dashed rgba(255,255,255,0.4);
+	padding: 3px;
 }
 
 #cmt .comment {
-	margin: 10px 0;
+	margin: 0 0 10px 0;
+	display: block;
+}
+
+#cmt article.comment {
+	border-bottom: 1px dashed rgba(255,255,255,0.4);
+}
+
+#cmt .children {
+	padding: 0;
+}
+
+#cmt .comment-content {
+	margin-left: 52px;
+}
+
+#cmt-nav::after {
+	content: "";
+	clear: both;
+}
+
+#cmt-nav {
+	padding: 8px 0;
+}
+
+#cmt-nav div {
+	display: inline-block;
+}
+
+#cmt-nav a {
+	border: none;
+	color: #CCC;
+}
+
+#cmt-nav .cmt-nav-next {
+	float: right;
+}
+
+#respond .logged-in-as, #respond .form-submit, #respond .comment-reply-title {
+	margin: 0;
+}
+
+#respond #cmt_form_meta {
+	margin-top: 12px;
+}
+
+#respond #cmt_form_meta input {
+	max-width: 25%;
+}
+
+#respond #comment {
+	width: 100%;
+	box-sizing: border-box;
+	line-height: 1.8em;
 }
 
 /* Mobile */
@@ -313,6 +459,68 @@ body {
 
 #page {
 	width: 100%;
+}
+
+#header {
+	margin: 0;
+	padding: 80px 20px 0 20px;
+	text-align: center;
+}
+
+#header form {
+	position: static;
+	text-align: center;
+	width: 100%;
+	margin: 10px 0 0 0;
+}
+
+#header, #header form input, #header .menu ul {
+	text-align: center;
+}
+
+#header .menu li {
+	margin: 0 20px;
+	padding: 0;
+}
+
+.ar_h {
+	padding: 20px 20px 20px 20px;
+}
+
+.ar_h h2 {
+	margin: 0 30px 2px 0;
+}
+
+.ar_h .hr {
+	right: 20px;
+}
+
+.ar_t {
+	padding: 20px 20px 60px 20px;
+}
+
+#sidebar {
+	padding: 40px 20px;
+}
+
+#sidebar .widget_ctn {
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+
+#sidebar .widget, #sidebar .widget:last-child{
+	padding: 20px 0 20px 0;
+	border-width: 1px;
+	padding: 20px 0 20px 0;
+}
+
+#sidebar #two .widget:last-child {
+	border-width: 0;
+}
+
+#footer {
+	margin: 0;
 }
 
 }

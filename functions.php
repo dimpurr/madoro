@@ -167,6 +167,8 @@ function dpt_comment( $comment, $args, $depth ) {
 						sprintf( '%1$s %2$s' , get_comment_date(), get_comment_time() )
 					);
 				?>
+				<?php edit_comment_link( __('編輯','dpt'), '<span class="edit-link">', '</span>' ); ?>
+				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __('回复','dpt'), 'after' => '', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 			</header>
 
 			<?php if ( '0' == $comment->comment_approved ) : ?>
@@ -175,8 +177,6 @@ function dpt_comment( $comment, $args, $depth ) {
 
 			<section class="comment-content comment">
 				<?php comment_text(); ?>
-				<?php edit_comment_link( __('編輯','dpt'), '<span class="edit-link">', '</span>' ); ?>
-				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __('回复','dpt'), 'after' => '', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 			</section>
 
 		</article>

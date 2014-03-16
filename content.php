@@ -23,7 +23,7 @@
 </header>
 
 <section class="ar_t">
-	<?php the_content('继续阅读','dpt'); ?>
+	<?php the_content(__('继续阅读','dpt')); ?>
 </section>
 
 </article>
