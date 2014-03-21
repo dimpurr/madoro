@@ -1,7 +1,7 @@
 /*
 Theme Name: madoro
 Theme URI: http://dimpurr.com/madoro
-Version: 1.0
+Version: 1.1
 Author: Dimpurr
 Author URI: http://dimpurr.com
 Description: A Flat Dark WordPress Theme.
@@ -71,7 +71,7 @@ body {
 }
 
 #page {
-	max-width: 700px;
+	max-width: 800px;
 	margin: 0 auto;
 }
 

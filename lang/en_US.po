@@ -1,0 +1,253 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Clearison en_US\n"
+"POT-Creation-Date: 2014-03-21 18:01+0800\n"
+"PO-Revision-Date: 2014-03-21 18:03+0800\n"
+"Last-Translator: Dimpurr <dimpurr@live.com>\n"
+"Language-Team: DimWorks <dimpurr@live.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../comments.php:13
+msgid "&larr; 更旧的吐槽"
+msgstr "&larr; Older comments"
+
+#: ../comments.php:14
+msgid "更新的吐槽 &rarr;"
+msgstr "Newer comments &rarr;"
+
+#: ../comments.php:19
+msgid "要和谐，不要吐槽~"
+msgstr "Can't comments here."
+
+#: ../comments.php:28
+#, php-format
+msgid "吐槽 %s"
+msgstr "Comments %s"
+
+#: ../comments.php:29
+msgid "放弃治疗"
+msgstr "Quit reply"
+
+#: ../comments.php:30
+msgid "发射"
+msgstr "Send"
+
+#: ../comments.php:37
+#, php-format
+msgid "你必须 <a href=\"%s\">登录</a> 后吐槽。"
+msgstr "You must <a href=\"%s\">Login</a> to reply."
+
+#: ../comments.php:43
+#, php-format
+msgid ""
+"以 <a href=\"%1$s\">%2$s</a> 登录。 <a href=\"%3$s\" title=\"Log out of this "
+"account\">退出</a>"
+msgstr ""
+"Login with <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out</a>"
+
+#: ../comments.php:56
+msgid "称呼"
+msgstr "Name"
+
+#: ../comments.php:59
+msgid "邮箱"
+msgstr "Email"
+
+#: ../comments.php:62
+msgid "站点"
+msgstr "Site"
+
+#: ../content.php:11
+msgid "编辑"
+msgstr "Edit"
+
+#: ../content.php:18 ../functions.php:171
+msgid "回复"
+msgstr "Reply"
+
+#: ../content.php:18
+msgid "1"
+msgstr "1"
+
+#: ../content.php:18
+msgid "%"
+msgstr "%"
+
+#: ../content.php:26
+msgid "继续阅读"
+msgstr "Read More"
+
+#: ../functions.php:13
+msgid "Main Nav"
+msgstr "Main Nav"
+
+#: ../functions.php:20
+msgid "One"
+msgstr "One"
+
+#: ../functions.php:22
+msgid "左侧工具栏"
+msgstr "Left Widget Bar"
+
+#: ../functions.php:33
+msgid "Two"
+msgstr "Two"
+
+#: ../functions.php:35
+msgid "右侧工具栏"
+msgstr "Right Widget Bar"
+
+#: ../functions.php:104
+#, php-format
+msgid "页面 %s"
+msgstr "Page %s"
+
+#: ../functions.php:126
+msgid "上一页"
+msgstr "Prev Page"
+
+#: ../functions.php:127
+msgid "下一页"
+msgstr "Next Page"
+
+#: ../functions.php:163
+msgid "作者"
+msgstr "Writer"
+
+#: ../functions.php:170
+msgid "編輯"
+msgstr "Edit"
+
+#: ../functions.php:175
+msgid "审核中"
+msgstr "Examing."
+
+#: ../functions.php:193 ../functions.php:194 ../functions.php:215
+msgid "madoro 主题设置"
+msgstr "madoro Setting"
+
+#: ../functions.php:205
+msgid "madoro 设置"
+msgstr "madoro Setting"
+
+#: ../functions.php:221
+msgid "网站图标："
+msgstr "Site icon:"
+
+#: ../functions.php:222
+msgid "输入 ICO/PNG 图标链接，留空调用根目录 favicon.ico"
+msgstr ""
+"Input ICO/PNG icon file link, or empty to load favicon.ico in the site root "
+"url"
+
+#: ../functions.php:224
+msgid "统计代码："
+msgstr "Analysis code:"
+
+#: ../functions.php:225
+msgid "输入网站统计代码"
+msgstr "Paste website analysis code. Also can add some text."
+
+#: ../header.php:40
+msgid "搜索"
+msgstr "Search"
+
+#~ msgid "出品"
+#~ msgstr "Written"
+
+#~ msgid "木有吐槽"
+#~ msgstr "No Reply"
+
+#~ msgid "落单的吐槽"
+#~ msgstr "Alone Relpy"
+
+#~ msgid "%发吐槽"
+#~ msgstr "% Reply"
+
+#~ msgid "调教文章"
+#~ msgstr "Edit Post"
+
+#~ msgid "Clearision 设置"
+#~ msgstr "Clearision Setting"
+
+#~ msgid "主菜单"
+#~ msgstr "Main Menu"
+
+#~ msgid "辅助链接"
+#~ msgstr "Secondary Link"
+
+#~ msgid "底部栏1"
+#~ msgstr "Bottom Siderbar One"
+
+#~ msgid "底部栏2"
+#~ msgstr "Bottom Sidebar Two"
+
+#~ msgid "你的评论正在等待和谐审查"
+#~ msgstr "Your comment is waiting for examine."
+
+#~ msgid "LOGO头像："
+#~ msgstr "LOGO:"
+
+#~ msgid "粘贴链接或点击上传"
+#~ msgstr "Paste image link or click upload."
+
+#~ msgid "上传"
+#~ msgstr "Upload"
+
+#~ msgid "默认值："
+#~ msgstr "Default:"
+
+#~ msgid "访客环境："
+#~ msgstr "Guest UA:"
+
+#~ msgid "显示"
+#~ msgstr "Enable"
+
+#~ msgid "不显示"
+#~ msgstr "Disable"
+
+#~ msgid "文章作者："
+#~ msgstr "Post writer:"
+
+#~ msgid "社交图标"
+#~ msgstr "SNS icon:"
+
+#~ msgid "友情链接："
+#~ msgstr "Links:"
+
+#~ msgid "在这里使用 HTML 代码自定义友链区的内容"
+#~ msgstr "Use HTML code to custom links section."
+
+#~ msgid "提交更改："
+#~ msgstr "Submit changes:"
+
+#~ msgid "保存全部设置"
+#~ msgstr "Save all changes"
+
+#~ msgid "什么都没有找到"
+#~ msgstr "Nothing Found"
+
+#~ msgid "哎呀，你要找的东西好像被贝爷吃掉了……"
+#~ msgstr "Ouch! Please retry."
+
+#~ msgid "友情链接"
+#~ msgstr "Links"
+
+#~ msgid "当前状态："
+#~ msgstr "Current status:"
+
+#~ msgid "放弃吐槽"
+#~ msgstr "Cancel comments"
+
+#~ msgid "Page %s"
+#~ msgstr "Page %s"

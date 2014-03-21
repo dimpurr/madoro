@@ -190,44 +190,39 @@ endif;
 
 function dpt_menu_func(){   
 	add_theme_page(
-		__('设置','dpt'),
-		__('设置','dpt'),
+		__('madoro 主题设置','dpt'),
+		__('madoro 主题设置','dpt'),
 		'administrator',
 		'dpt_menu',
 		'dpt_config');
 }
 
-// add_action('admin_menu', 'dpt_menu_func');
+function my_admin_bar_render() {
+	global $wp_admin_bar;
+	$wp_admin_bar->add_menu( array(
+		'parent' => 'wp-admin-bar-site-name',
+		'id' => 'theme_setting',
+		'title' => __('madoro 设置','dpt'),
+		'href' => admin_url( 'themes.php?page=dpt_menu'),
+	));
+}
 
-function dpt_config(){ dpt_thtj(); ?>
+add_action('admin_menu', 'dpt_menu_func');
+add_action( 'wp_before_admin_bar_render', 'my_admin_bar_render' );
+
+function dpt_config(){ dpt_count(); ?>
+
+<h1><?php _e('madoro 主题设置'); ?></h1>
 
 <form method="post" name="dpt_form" id="dpt_form">
 
-<h1><?php _e('主题设置'); ?></h1>
+	<h3><a href="http://blog.dimpurr.com/madoro">madoro 主题主页→</a></h3>
 
-<input type="text" size="80" name="dpt_example" id="dpt_example" placeholder="<?php _e('示例控件','dpt'); ?>" value="<?php echo get_option('dpt_example'); ?>"/>
-<input type="button" name="upload_button" value="<?php _e('上传','dpt'); ?>" id="upbottom"/><br>
+	<br><h3><?php _e('网站图标：','dpt'); ?></h3>
+	<input type="text" size="80" name="dpt_favi" id="dpt_favi" placeholder="<?php _e('输入 ICO/PNG 图标链接，留空调用根目录 favicon.ico','dpt'); ?>" value="<?php echo get_option('dpt_favi'); ?>"/>
 
-<input type="submit" name="option_save" value="<?php _e('保存设置','dpt'); ?>" />
-
-<?php wp_enqueue_script('thickbox'); wp_enqueue_style('thickbox'); ?>
-	<script type="text/javascript">
-	// 导入 WordPress 媒体上传组件
-jQuery(document).ready(function() {
-	// 选择按钮
-	jQuery('#upbottom').click(function() {
-		// 选择目标文本框
-		targetfield = jQuery(this).prev('#dpt_example');
-		tb_show('', 'media-upload.php?type=image&amp;TB_iframe=true');
-		return false;
-	});
-	window.send_to_editor = function(html) {
-		imgurl = jQuery('img',html).attr('src');
-		jQuery(targetfield).val(imgurl);
-		tb_remove();
-	}	
-});
-	</script>
+	<h3><?php _e('统计代码：','dpt'); ?></h3>
+	<textarea name="dpt_tongji" rows="10" cols="60" placeholder="<?php _e('输入网站统计代码','dpt'); ?>" style="font-size: 14px; font-family: Consolas, monospace, sans-serif, sans"><?php echo get_option('dpt_tongji'); ?></textarea><br>
 
 <?php wp_nonce_field('update-options'); ?>
 <input type="hidden" name="action" value="update" />

@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<link rel="shortcut icon" type="image/x-icon" href="<?=get_option( 'dpt_favi', 'favicon.ico' );?>" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="author" content="dimpurr" />

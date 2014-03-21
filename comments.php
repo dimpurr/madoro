@@ -53,16 +53,13 @@
   'fields' => apply_filters( 'comment_form_default_fields', array(
 
     'author' =>
-      '<div id="cmt_form_meta"><input placeholder="'.__('称呼','dpt').'" id="author" name="author" type="text" required="required" value="' . esc_attr( $commenter['comment_author'] ) .
-      '" />',
+      '<div id="cmt_form_meta"><input placeholder="'.__('称呼','dpt').'" id="author" name="author" type="text" required="required" />',
 
     'email' =>
-      '<input placeholder="'.__('邮箱','dpt').'" id="email" name="email" type="email" required="required" value="' . esc_attr(  $commenter['comment_author_email'] ) .
-      '" />',
+      '<input placeholder="'.__('邮箱','dpt').'" id="email" name="email" type="email" required="required" />',
 
     'url' =>
-      '<input placeholder="'.__('站点','dpt').'" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
-      '" /></div>'
+      '<input placeholder="'.__('站点','dpt').'" id="url" name="url" type="text" /></div>'
     )
   ),
 ); ?>
