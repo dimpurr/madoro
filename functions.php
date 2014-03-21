@@ -200,7 +200,7 @@ function dpt_menu_func(){
 function my_admin_bar_render() {
 	global $wp_admin_bar;
 	$wp_admin_bar->add_menu( array(
-		'parent' => 'wp-admin-bar-site-name',
+		'parent' => false,
 		'id' => 'theme_setting',
 		'title' => __('madoro 设置','dpt'),
 		'href' => admin_url( 'themes.php?page=dpt_menu'),
@@ -224,6 +224,9 @@ function dpt_config(){ dpt_count(); ?>
 	<h3><?php _e('统计代码：','dpt'); ?></h3>
 	<textarea name="dpt_tongji" rows="10" cols="60" placeholder="<?php _e('输入网站统计代码','dpt'); ?>" style="font-size: 14px; font-family: Consolas, monospace, sans-serif, sans"><?php echo get_option('dpt_tongji'); ?></textarea><br>
 
+	<br><h3><?php _e('提交更改：','clrs'); ?></h3>
+	<input type="submit" name="option_save" value="<?php _e('保存全部设置','clrs'); ?>" />
+
 <?php wp_nonce_field('update-options'); ?>
 <input type="hidden" name="action" value="update" />
 <input type="hidden" name="page_options" value="dpt_copy_right" />
@@ -236,8 +239,12 @@ function dpt_config(){ dpt_count(); ?>
 
 if(isset($_POST['option_save'])){
 
-	$dpt_example = stripslashes($_POST['dpt_example']);
-	update_option( 'dpt_example', $dpt_example );
+	$dpt_favi = stripslashes($_POST['dpt_favi']);
+	update_option( 'dpt_favi', $dpt_favi );
+
+	$dpt_tongji = stripslashes($_POST['dpt_tongji']);
+	update_option( 'dpt_tongji', $dpt_tongji );
+
 }
 
 ?>
