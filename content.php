@@ -8,7 +8,7 @@
 	
 	<div class="hl">
 		<div class="hl_tags">
-			<?php echo edit_post_link( __('编辑','dpt') ); ?><?php the_category(' '); ?><a href="<?php the_permalink(); ?>"><?php the_time('m / j') ?>&nbsp;&nbsp;-&nbsp;&nbsp;<?php the_time('H : i') ?></a><?php the_tags('','',''); ?>
+			<?php echo edit_post_link( __('编辑','dpt') ); ?><?php the_category(' '); ?><a href="<?php the_permalink(); ?>"><?php the_time('y / m / j') ?>&nbsp;&nbsp;-&nbsp;&nbsp;<?php the_time('H : i') ?></a><?php the_tags('','',''); ?>
 		</div>
 	</div>
 		
